@@ -1,0 +1,105 @@
+%% Фонтови
+\usepackage{fontspec}
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{Liberation Mono}[Scale=MatchLowercase]
+
+%% Јазик
+\usepackage[nil,provide=*]{babel}
+\babelprovide[main,import]{macedonian}
+\babelprovide[import]{english}
+\newfontfamily\cyrillicfonttt{Liberation Mono}[Scale=MatchLowercase]
+
+%% Преводи на натписи
+\addto\captionsmacedonian{
+  \renewcommand{\figurename}{Слика}
+  \renewcommand{\tablename}{Табела}
+  \renewcommand{\contentsname}{Содржина}
+  \renewcommand{\listfigurename}{Листа на слики}
+  \renewcommand{\listtablename}{Листа на табели}
+  \renewcommand{\refname}{Литература}
+  \renewcommand{\bibname}{Литература}
+}
+
+%% Геометрија на страница
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+%% Параграфи и форматирање
+\usepackage[parfill]{parskip}
+\usepackage{setspace}
+\usepackage{microtype}  % Подобрена типографија
+
+%% Графика и слики
+\usepackage{graphicx}
+\usepackage{caption}
+
+%% Математика
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+%% Табели
+\usepackage{booktabs}  % Подобри табели
+
+%% Графикони
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+%% Наводници
+\usepackage[style=german]{csquotes}
+\DeclareQuoteStyle{macedonian}
+{\quotedblbase}
+{\textquotedblleft}
+[0.05em]
+{\quotesinglbase}
+{\textquoteleft}
+
+
+%% Код листинзи
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Код}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries\color{blue},
+  commentstyle=\itshape\color{gray},
+  stringstyle=\color{cyan},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  frame=single,
+  breaklines=true,
+  showstringspaces=false,
+  captionpos=b,
+  xleftmargin=0.05\textwidth,
+  xrightmargin=0.05\textwidth
+}
+
+%% Хедери и футери
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\large \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\footskip}{15mm}
+
+\usepackage[hidelinks]{hyperref}
+
+
+%% Често користени пакети
+
+% \usepackage{bm}
+% \usepackage{mathtools}
+% \usepackage{subcaption}
+% \usepackage[affil-it]{authblk}
+% \usepackage{url}
+% \usepackage{float}
+% \usepackage{tcolorbox}
+% \usepackage{algorithm}
+% \usepackage{algpseudocode}
+% \floatname{algorithm}{Алгоритам}  % Превод за алгоритам
+% \usepackage{enumitem}
+% \usepackage{textcomp}
+% \usepackage{hyphenat}
+% \usepackage{datetime}

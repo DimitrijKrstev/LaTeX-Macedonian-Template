@@ -1,0 +1,25 @@
+\documentclass[a4paper]{article}
+
+\input{config/preamble}
+\input{config/commands}
+
+\begin{document}
+
+\setlength{\parindent}{15pt}
+\fontsize{12pt}{14pt}\selectfont
+
+\input{sections/abstract}
+
+\newpage
+\renewcommand{\contentsname}{\LARGE Содржина}
+\tableofcontents
+
+\input{sections/introduction/introduction}
+\input{sections/related-work/related-work}
+\input{sections/methodology/methodology}
+\input{sections/conclusion/conclusion}
+
+% Литература
+\input{back/bibliography}
+
+\end{document}

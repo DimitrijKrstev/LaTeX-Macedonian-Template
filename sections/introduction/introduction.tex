@@ -1,0 +1,24 @@
+\newpage
+\pagenumbering{arabic}
+\section{Вовед}
+\label{sec:introduction}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/latex-logo.png}
+  \caption{Опис на сликата}
+  \label{fig:my-label}
+\end{figure}
+
+Пример за референца е ова \cite{knuth1984texbook}.
+
+Дополнително, ја референцираме и LaTeX логото \ref{fig:my-label}.
+
+
+Вака референцираме табела~\ref{tab:tools-comparison}
+
+% Вака се венсува табела
+\input{tables/tools-comparison}
+
+% Вклучување на дополнителни подсекции
+\input{sections/introduction/lists-example}

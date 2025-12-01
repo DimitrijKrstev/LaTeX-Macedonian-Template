@@ -1,0 +1,41 @@
+\subsection{Примери за листи}
+
+LaTeX поддржува различни типови на листи за организирање на содржината.
+
+\subsubsection{Ненумерирани листи}
+
+Ненумерираните листи се креираат со околината \texttt{itemize}:
+
+\begin{itemize}
+  \item Прва ставка
+  \item Втора ставка
+  \item Трета ставка
+    \begin{itemize}
+      \item Вгнездена подставка
+      \item Друга подставка
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Нумерирани листи}
+
+Нумерираните листи се креираат со околината \texttt{enumerate}:
+
+\begin{enumerate}
+  \item Прв чекор
+  \item Втор чекор
+  \item Трет чекор
+    \begin{enumerate}
+      \item Подчекор 3.1
+      \item Подчекор 3.2
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Дескриптивни листи}
+
+Дескриптивните листи се креираат со околината \texttt{description}:
+
+\begin{description}
+  \item[LaTeX] Систем за подготовка на документи
+  \item[Macedonian] Јазик користен во овој шаблон
+  \item[UTF-8] Кодирање за текст
+\end{description}
